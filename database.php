@@ -14,7 +14,7 @@ $log_all_errors = FALSE;
 // If not using the default port 3306, then append a colon and port number to the hostname (e.g. $hostname = 'example.com:3307';).
 
 $hostname   = 'localhost';	//your_mysql_host_name
-$db     	= 'redcap_dev'; 	//your_mysql_db_name
+$db     	  = 'redcap_dev'; 	//your_mysql_db_name
 $username   = 'alberto'; 	//your_mysql_db_username
 $password   = 'root2024'; 	//your_mysql_db_password
 
