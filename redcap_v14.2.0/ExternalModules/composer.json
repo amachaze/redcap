@@ -1,0 +1,13 @@
+{
+    "require-dev": {
+        "phpcompatibility/php-compatibility": "*",
+        "johnkary/phpunit-speedtrap": "*",
+        "vimeo/psalm": "*",
+        "phpunit/phpunit": "^9"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.0"
+        }
+    }
+}

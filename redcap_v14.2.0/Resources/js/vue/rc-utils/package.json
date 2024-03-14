@@ -1,0 +1,9 @@
+{
+  "name": "rc-utils",
+  "version": "1.0.0",
+  "description": "vue components for redcap",
+  "main": "index.js",
+  "author": "Francesco Delacqua",
+  "license": "MIT",
+  "private": true
+}

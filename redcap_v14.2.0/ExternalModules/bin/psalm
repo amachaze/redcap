@@ -1,0 +1,17 @@
+#!/bin/bash
+
+isNewPHPVersion=`php -r 'echo version_compare(PHP_VERSION, '7.4');'`
+
+if [ $isNewPHPVersion -eq 1 ]
+then
+    path='vendor/alternate-dependencies/vendor/bin/psalm'
+
+    if [ ! -f "$path" ]; then
+        echo "Please run run-test.sh or phpunit first to guarantee that Psalm has been downloaded."
+        exit
+    fi
+else
+    path='vendor/bin/psalm'
+fi
+
+$path "$@"

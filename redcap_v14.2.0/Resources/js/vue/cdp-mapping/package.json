@@ -1,0 +1,49 @@
+{
+  "name": "cdp-mapping",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name cdp_mapping_vue",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ramda": "^0.27.2",
+    "vue": "^2.7.14",
+    "vuedraggable": "^2.24.3",
+    "vuelidate": "^0.7.7"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-unused-vars": "off",
+      "vue/no-unused-components": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

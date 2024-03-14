@@ -1,0 +1,12 @@
+/.idea
+/vendor
+*.code-workspace
+/node_modules
+/.phpunit.result.cache
+/cov.xml
+/.vscode/launch.json
+/tests/test-module/psalm.xml
+/tests/test-module/scan-test-temp*
+/tests/test-module/scan-test-empty-temp*
+/example_modules/vanderbilt_configurationExample_v0.1/empty-file.php
+/example_modules/vanderbilt_configurationExample_v0.1/file-with-ignore-scan-issues.php

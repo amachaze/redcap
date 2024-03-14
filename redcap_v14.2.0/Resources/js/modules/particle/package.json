@@ -1,0 +1,10 @@
+{
+  "name": "particle",
+  "version": "1.0.0",
+  "description": "Reactivity library",
+  "main": "src/index.js",
+  "repository": "git@github.com:bi0nd0/particle.git",
+  "author": "Francesco Delacqua <bi0nd0@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true
+}

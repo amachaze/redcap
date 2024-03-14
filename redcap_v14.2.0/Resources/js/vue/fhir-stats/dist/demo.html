@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title>fhir_stats_vue demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./fhir_stats_vue.umd.js"></script>
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: fhir_stats_vue
+  }
+}).$mount('#app')
+</script>

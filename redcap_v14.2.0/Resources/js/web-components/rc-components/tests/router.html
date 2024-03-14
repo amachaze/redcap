@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import './src/index.js'
+        import Test from './src/components/Test.js'
+        import {
+            defineCustomElement,
+            Modal,
+            Teleport,
+            Lazy,
+            LazyImage,
+            Toast,
+            Toaster,
+            Dropdown,
+            DropdownItem,
+            Router,
+            Route,
+        } from './src'
+
+
+
+        const routerElement = document.querySelector('[data-router]')
+        let router = new Router(routerElement)
+        const testElement = document.createElement('div')
+        testElement.innerHTML = 'this is a test!'
+        const testRoute = new Route({ path:'/test', name:'testroute', component:testElement })
+        router.addRoute(testRoute)
+    </script>
+    <style>
+        .links a::before {
+        content: '|';
+        display: inline-block;
+        margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="links">
+        <a href="#/">home</a>
+        <a href="#/about">about</a>
+        <a href="#/user/francesco">francesco</a>
+        <a href="#/user/francesco/about">about francesco</a>
+        <a href="#/about/sub">sub about</a>
+        <a href="#/info">info</a>
+        <a href="#/not-found">not found</a>
+        <a href="#/sub">sub</a>
+        <a href="#/test">test</a>
+        <a href="#/sub-as-root">sub as root</a>
+      </nav>
+
+    <div data-router>
+
+        <template data-route="/">
+          <span>home</span>
+      
+          <span data-route="sub">sub home</span>
+      
+        </template>
+      
+        <section data-route="/user/:user-id">  
+          <span>user</span>
+          <span>something</span>
+        </section>
+      
+      
+        <section data-route="/user/:user-id/about">  
+          <span>about user</span>
+          <span>something</span>
+        </section>
+      
+      
+        <template data-route="/info">
+          <span>info again</span>
+          <img src="https://placekitten.com/g/200/300" />
+        </template>
+      
+        <template data-route="/about">
+          <span>about</span>
+          <span data-route="/sub-as-root">sub as root</span>
+          <span data-route="sub">sub about</span>
+        </template>
+      
+        <template data-route="*">
+          <h1>not found</h1>
+          <h3>sorry, wrong address</h3>
+        </template>
+      
+      </div>
+</body>
+</html>
