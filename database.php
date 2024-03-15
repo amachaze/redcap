@@ -13,10 +13,10 @@ $log_all_errors = FALSE;
 // Replace the values inside the single quotes below with the values for your MySQL configuration. 
 // If not using the default port 3306, then append a colon and port number to the hostname (e.g. $hostname = 'example.com:3307';).
 
-$hostname   = '146.190.172.9';	//your_mysql_host_name
+$hostname   = 'localhost';	//your_mysql_host_name
 $db     	  = 'redcap_dev'; 	//your_mysql_db_name
-$username   = 'alberto'; 	//your_mysql_db_username
-$password   = 'root2024'; 	//your_mysql_db_password
+$username   = 'root'; 	//your_mysql_db_username
+$password   = ''; 	//your_mysql_db_password
 
 // You may optionally utilize a database connection over SSL/TLS for improved security. To do so, at minimum
 // you must provide the path of the key file, the certificate file, and certificate authority file.
