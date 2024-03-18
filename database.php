@@ -14,9 +14,9 @@ $log_all_errors = FALSE;
 // If not using the default port 3306, then append a colon and port number to the hostname (e.g. $hostname = 'example.com:3307';).
 
 $hostname   = 'localhost';	//your_mysql_host_name
-$db     	  = 'redcap_dev'; 	//your_mysql_db_name
-$username   = 'root'; 	//your_mysql_db_username
-$password   = ''; 	//your_mysql_db_password
+$db     	  = 'redcap_prod'; 	//your_mysql_db_name
+$username   = 'cispoc'; 	//your_mysql_db_username
+$password   = 'C15POC24'; 	//your_mysql_db_password
 
 // You may optionally utilize a database connection over SSL/TLS for improved security. To do so, at minimum
 // you must provide the path of the key file, the certificate file, and certificate authority file.
