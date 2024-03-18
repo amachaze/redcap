@@ -13,7 +13,7 @@ $log_all_errors = FALSE;
 // Replace the values inside the single quotes below with the values for your MySQL configuration. 
 // If not using the default port 3306, then append a colon and port number to the hostname (e.g. $hostname = 'example.com:3307';).
 
-$hostname   = '64.23.197.115';	//your_mysql_host_name
+$hostname   = '64.23.197.115';	//your_mysql_host_name server IP
 $db     	  = 'redcap_prod'; 	//your_mysql_db_name
 $username   = 'cispoc'; 	//your_mysql_db_username
 $password   = 'C15POC24'; 	//your_mysql_db_password
