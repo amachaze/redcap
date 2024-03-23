@@ -16,7 +16,7 @@ $log_all_errors = FALSE;
 $hostname   = '64.23.197.115';	//your_mysql_host_name server IP
 $db     	  = 'redcap_prod'; 	//your_mysql_db_name
 $username   = 'cispoc'; 	//your_mysql_db_username
-$password   = 'C15POC24'; 	//your_mysql_db_password
+$password   = 'cispoc24'; 	//your_mysql_db_password
 
 // You may optionally utilize a database connection over SSL/TLS for improved security. To do so, at minimum
 // you must provide the path of the key file, the certificate file, and certificate authority file.
